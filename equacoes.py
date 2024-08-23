@@ -11,9 +11,9 @@ def mostrar_menu():
 def calcular_grau_2(a, b, c):
     delta = (b**2)-(4*a*c)
     if delta < 0:
-        return "A equação não possui raízes reais."
+        yield "A equação não possui raízes reais."
     elif delta == 0:
-        return f'Valor de x é {(-b)/(2*a)}.'
+        yield f'Valor de x é {(-b)/(2*a)}.'
     else:
         raiz_delta = math.sqrt(delta)
         x1 = (-b + raiz_delta)/(2*a)
